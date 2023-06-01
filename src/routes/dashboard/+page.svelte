@@ -10,12 +10,12 @@
 				<div class="dish">Paneer Tikka <span class="name">by Rahul</span></div>
                 <div class="actions">
                     <div class="start">
-                        <div class="action like"></div>
-                        <div class="action comment"></div>
-                        <div class="action share"></div>
+                        <div class="action like"><Fa icon={faHeart} /></div>
+                        <div class="action comment"><Fa icon={faComment} /></div>
+                        <div class="action share"><Fa icon={faShareNodes} /></div>
                     </div>
                     <div class="end">
-                        <div class="action bookmark"></div>
+                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
                     </div>
                 </div>
 			</div>
@@ -81,3 +81,11 @@
 		}
 	}
 </style>
+
+<script>
+// @ts-ignore
+import Fa from 'svelte-fa/src/fa.svelte'
+
+import { faBookmark, faComment, faHeart, faShareNodes } from '@fortawesome/free-solid-svg-icons';
+
+</script>

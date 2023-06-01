@@ -1,7 +1,7 @@
 <div class="TopBar">
 	<div class="logo" />
 	<div class="profile">
-        <div class="dp"><Icon data={user}/></div>
+        <div class="dp"><Fa icon={faUser} /></div>
         <div class="details">
             <div class="name">User</div>
             <div class="bio">Bio</div>
@@ -65,7 +65,8 @@
 </style>
 
 <script>
-import Icon from 'svelte-awesome';
+// @ts-ignore    
+import Fa from 'svelte-fa/src/fa.svelte'
 
-import user from 'svelte-awesome/icons/user';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 </script>

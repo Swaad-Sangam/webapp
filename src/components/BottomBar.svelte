@@ -1,16 +1,34 @@
 <div class="BottomBar">
-    <div class="Route">
-        <div class="icon"><Icon data="{search}"/></div>
-        <div class="name">Explore</div>
-    </div>
-    <div class="Route">
-        <div class="icon"><Icon data="{group}"/></div>
-        <div class="name">Area Group</div>
-    </div>
-    <div class="Route">
-        <div class="icon"><Icon data={locationArrow}/></div>
-        <div class="name">Local</div>
-    </div>
+    <a href="/dashboard">
+        <div class="Route">
+            <div class="icon"><Fa icon={faHome} /></div>
+            <div class="name">Explore</div>
+        </div>
+    </a>
+    <a href="/dashboard/search">
+        <div class="Route">
+            <div class="icon"><Fa icon={faMagnifyingGlass} /></div>
+            <div class="name">Search</div>
+        </div>
+    </a>
+    <a href="/dashboard/post">
+        <div class="Route">
+            <div class="icon"><Fa icon={faPlusCircle} /></div>
+            <div class="name">Post</div>
+        </div>
+    </a>
+    <a href="/dashboard/groups">
+        <div class="Route">
+            <div class="icon"><Fa icon={faUserGroup} /></div>
+            <div class="name">Groups</div>
+        </div>
+    </a>
+    <a href="/dashboard/profile">
+        <div class="Route">
+            <div class="icon"><Fa icon={faUser} /></div>
+            <div class="name">Profile</div>
+        </div>
+    </a>
 </div>
 
 <style lang="scss">
@@ -22,6 +40,16 @@
 
 		background-color: var(--container-lowest-bg-color);
 		padding: 0.25rem;
+
+        a:link {color:#000;}  
+        a:visited {color:#000;}  
+        a:hover {color:#000;}  
+        a:active {color:#000;}   
+
+        a {
+            cursor: default;
+            text-decoration: none;
+        }
 
 		.Route {
             display: flex;
@@ -48,9 +76,8 @@
 </style>
 
 <script>
-import Icon from 'svelte-awesome';
+// @ts-ignore
+import Fa from 'svelte-fa/src/fa.svelte'
 
-import search from 'svelte-awesome/icons/search';
-import group from 'svelte-awesome/icons/group';
-import locationArrow from 'svelte-awesome/icons/locationArrow';
+import { faHome, faLocationDot, faMagnifyingGlass, faPlusCircle, faUser, faUserGroup } from '@fortawesome/free-solid-svg-icons';
 </script>
