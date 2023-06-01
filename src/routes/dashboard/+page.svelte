@@ -44,11 +44,11 @@
 		<div class="post">
 			<div class="photo">
 				<img
-					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
+					src="https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka-featured.jpg"
 				/>
 			</div>
 			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
+				<div class="dish">Paneer Tikka <span class="name">by Rahul</span></div>
                 <div class="actions">
                     <div class="start">
                         <div class="action like"><Fa icon={faHeart} /></div>
@@ -65,11 +65,11 @@
 		<div class="post">
 			<div class="photo">
 				<img
-					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
+					src="https://profusioncurry.com/wp-content/uploads/2022/07/Shahi-paneer-recipe-served-with-garnishes.jpg"
 				/>
 			</div>
 			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
+				<div class="dish">Shahi Paneer <span class="name">by Rahul</span></div>
                 <div class="actions">
                     <div class="start">
                         <div class="action like"><Fa icon={faHeart} /></div>
@@ -227,8 +227,10 @@
 
 			.photo {
 				img {
-					width: 325px;
-					height: 308px;
+					// width: 325px;
+					// height: 308px;
+					width: 100%;
+					height: 100%;
                     border-radius: 1rem;
 				}
 			}
