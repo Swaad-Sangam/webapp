@@ -1,9 +1,7 @@
-import type { Item } from 'svelte-dnd-action';
-
 export interface user_t {
 	id: string;
 	name: string;
-	folders: folder_t[];
+	favorite_recipe: recipe_t[]
 }
 
 export interface task_t {
