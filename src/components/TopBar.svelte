@@ -1,10 +1,10 @@
 <div class="TopBar">
 	<div class="logo" />
 	<div class="profile">
-        <div class="dp"></div>
+        <div class="dp"><Icon data={user}/></div>
         <div class="details">
-            <div class="name">Aunty</div>
-            <div class="bio">Chatpata</div>
+            <div class="name">User</div>
+            <div class="bio">Bio</div>
         </div>
     </div>
 </div>
@@ -63,3 +63,9 @@
         }
 	}
 </style>
+
+<script>
+import Icon from 'svelte-awesome';
+
+import user from 'svelte-awesome/icons/user';
+</script>

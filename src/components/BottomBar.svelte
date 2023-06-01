@@ -1,14 +1,14 @@
 <div class="BottomBar">
     <div class="Route">
-        <div class="icon">📚</div>
+        <div class="icon"><Icon data="{search}"/></div>
         <div class="name">Explore</div>
     </div>
     <div class="Route">
-        <div class="icon">📚</div>
+        <div class="icon"><Icon data="{group}"/></div>
         <div class="name">Area Group</div>
     </div>
     <div class="Route">
-        <div class="icon">📚</div>
+        <div class="icon"><Icon data={locationArrow}/></div>
         <div class="name">Local</div>
     </div>
 </div>
@@ -46,3 +46,11 @@
         }
 	}
 </style>
+
+<script>
+import Icon from 'svelte-awesome';
+
+import search from 'svelte-awesome/icons/search';
+import group from 'svelte-awesome/icons/group';
+import locationArrow from 'svelte-awesome/icons/locationArrow';
+</script>
