@@ -3,7 +3,15 @@
 
 	import Modal from "../components/modals/Modal.svelte";
 	import { Toaster } from 'svelte-french-toast';
-	import { isLoading } from "../lib/stores";
+	import { authStore, isLoading } from "../lib/stores";
+	import { onMount } from 'svelte';
+	import { supabase } from '../supabase';
+
+	onMount(() => {
+		supabase.auth.onAuthStateChange((event, session) => {
+			authStore.set(session);
+		});
+	});
 </script>
 
 <Toaster />

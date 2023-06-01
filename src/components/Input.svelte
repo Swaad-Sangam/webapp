@@ -51,7 +51,7 @@
 
 		padding: 0px 20px;
 
-		background-color: white;
+		background-color: var(--container-lowest-bg-color);
 		box-shadow: 8px 8px #D3D3D34a;
 		border-radius: 5px;
 
@@ -66,7 +66,7 @@
 
 			padding: 15px 20px;
 
-			color: white;
+			color: var(--font-color);
 			font-size: 1rem;
 
 			&:only-child {

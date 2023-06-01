@@ -8,7 +8,9 @@
 
 <section class="Dashboard">
 	<TopBar />
-	<slot />
+	<div class="main">
+		<slot />
+	</div>
 	<BottomBar />
 </section>
 
@@ -19,5 +21,12 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+
+		.main {
+			width: 100%;
+			height: 100%;
+			align-self: center;
+			overflow-y: auto;
+		}
 	}
 </style>
