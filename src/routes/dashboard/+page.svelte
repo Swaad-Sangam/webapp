@@ -1,50 +1,9 @@
 <div class="Posts">
+	{#each { length: 8 } as _, i}
 		<div class="post">
 			<div class="photo">
 				<img
 					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://www.funfoodfrolic.com/wp-content/uploads/2022/08/Soya-Chaap-Blog.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Chaap Masala <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka-featured.jpg"
 				/>
 			</div>
 			<div class="details">
@@ -61,153 +20,7 @@
                 </div>
 			</div>
 		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://profusioncurry.com/wp-content/uploads/2022/07/Shahi-paneer-recipe-served-with-garnishes.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Shahi Paneer <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
-
-		<div class="post">
-			<div class="photo">
-				<img
-					src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
-				/>
-			</div>
-			<div class="details">
-				<div class="dish">Chicken Tikka <span class="name">by Rahul</span></div>
-                <div class="actions">
-                    <div class="start">
-                        <div class="action like"><Fa icon={faHeart} /></div>
-                        <div class="action comment"><Fa icon={faComment} /></div>
-                        <div class="action share"><Fa icon={faShareNodes} /></div>
-                    </div>
-                    <div class="end">
-                        <div class="action bookmark"><Fa icon={faBookmark} /></div>
-                    </div>
-                </div>
-			</div>
-		</div>
+	{/each}
 </div>
 
 <style lang="scss">
@@ -227,10 +40,9 @@
 
 			.photo {
 				img {
-					// width: 325px;
-					// height: 308px;
 					width: 100%;
 					height: 100%;
+					aspect-ratio: 1/1;
                     border-radius: 1rem;
 				}
 			}
