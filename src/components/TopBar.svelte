@@ -1,12 +1,14 @@
 <div class="TopBar">
 	<div class="logo" />
-	<div class="profile">
-        <div class="dp"><Fa icon={faUser} /></div>
-        <div class="details">
-            <div class="name">User</div>
-            <div class="bio">Bio</div>
+	    <div class="profile">
+            <div class="dp"><Fa icon={faUser} /></div>
+                <div class="details">
+                    <div class="name">User</div>
+                    <div class="bio">Bio</div>
+                </div>
+            
         </div>
-    </div>
+    
 </div>
 
 <style lang="scss">
