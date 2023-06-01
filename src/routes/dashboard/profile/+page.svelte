@@ -1,4 +1,7 @@
 <script>
+import Fa from 'svelte-fa/src/fa.svelte'
+
+import { faBookmark, faComment, faHeart, faShareNodes } from '@fortawesome/free-solid-svg-icons';
 </script>
 
 <div class="container">
@@ -7,9 +10,23 @@
     <p><strong>Email</strong>: user@universe.com</p>
     <p><strong>User Name</strong> : </p>
     <p><strong>Bio</strong>: </p> 
+
+    <hr>
+
+    <div class="Posts">
+        {#each { length: 8 } as _, i}
+            <div class="post">
+                <div class="photo">
+                    <img
+                        src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg"
+                    />
+                </div>
+            </div>
+        {/each}
+    </div>
 </div>
 
-<style>
+<style lang="scss">
 body{
     overflow: hidden;
 }
@@ -28,6 +45,12 @@ body{
     padding-top: 2.5rem;
 }
 
+hr{
+    background: black;
+    width: 80vh;
+    height: 2px;
+    margin-top: 1rem;
+}
 h2{
     margin-top: 0;
 }
@@ -41,4 +64,61 @@ img{
     height: 100px;
     width: 100px;
 }
+
+.Posts {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 1rem;
+		padding: 1rem 2rem;
+
+		.post {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem;
+
+			background-color: var(--container-bg-color);
+			border-radius: 1rem;
+
+			.photo {
+				img {
+					width: 100%;
+					height: 100%;
+                    border-radius: 1rem;
+				}
+			}
+
+			.details {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+				padding: 0.5rem 0rem;
+
+				.dish {
+					font-size: 1.1rem;
+					font-weight: 500;
+
+					.name {
+						font-size: 1rem;
+						font-weight: 400;
+					}
+				}
+
+                .actions {
+                    display: flex;
+                    justify-content: space-between;
+
+                    & > div {
+                        display: flex;
+                        gap: 1rem;
+
+                        .action {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+			}
+		}
+	}
 </style>
