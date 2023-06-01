@@ -1,3 +1,9 @@
+<script>
+	import Icon from 'svelte-awesome';
+
+	import user from 'svelte-awesome/icons/user';
+</script>
+
 <div class="TopBar">
 	<div class="logo" />
 	    <div class="profile">
@@ -28,47 +34,46 @@
 		}
 
 		.profile {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
 
-            background-color: var(--container-low-bg-color);
-            padding: 0.25rem 1rem;
+			background-color: var(--container-low-bg-color);
+			padding: 0.25rem 1rem;
 
-            border-radius: 1rem;
+			border-radius: 1rem;
 
-            .dp {
-                width: 2rem;
-                height: 2rem;
-            }
+			.dp {
+				width: 2rem;
+				height: 2rem;
+			}
 
-            .details {
-                display: flex;
-                flex-direction: column;
+			.details {
+				display: flex;
+				flex-direction: column;
 
-                padding: 0.25rem 0rem;
+				padding: 0.25rem 0rem;
 
-                @media screen and (max-width: 768px) {
-                    display: none;
-                }
+				@media screen and (max-width: 768px) {
+					display: none;
+				}
 
-                .name {
-                    font-size: 1rem;
-                    font-weight: 500;
-                }
+				.name {
+					font-size: 1rem;
+					font-weight: 500;
+				}
 
-                .bio {
-                    font-size: 0.9rem;
-                    font-weight: 400;
-                }
-            }
-        }
+				.bio {
+					font-size: 0.9rem;
+					font-weight: 400;
+				}
+			}
+		}
 	}
 </style>
 
 <script>
-// @ts-ignore    
-import Fa from 'svelte-fa/src/fa.svelte'
+import Icon from 'svelte-awesome';
 
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import user from 'svelte-awesome/icons/user';
 </script>

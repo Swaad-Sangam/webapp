@@ -2,7 +2,6 @@ import { supabase } from '../supabase';
 import { isSaving } from './stores';
 import type { nutrition_t } from './types';
 import toast from 'svelte-french-toast';
-import { goto } from '$app/navigation';
 
 export const recipeHandler = {
 	addRecipe: (

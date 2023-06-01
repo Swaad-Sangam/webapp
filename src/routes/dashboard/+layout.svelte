@@ -27,6 +27,7 @@
 			height: 100%;
 			align-self: center;
 			overflow-y: auto;
+			overflow-x: hidden;
 		}
 	}
 </style>

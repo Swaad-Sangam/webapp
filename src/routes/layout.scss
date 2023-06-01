@@ -80,3 +80,29 @@
 		}
 	}
 }
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+button {
+	width: fit-content;
+	background-color: var(--background-color);
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1rem 2rem;
+
+	font-size: 1rem;
+	font-weight: 600;
+
+	cursor: pointer;
+
+	transition: all;
+	transition-duration: 300ms;
+
+	color: var(--font-color);
+
+	&:hover {
+		background-color: var(--background-dim-color);
+	}
+}
