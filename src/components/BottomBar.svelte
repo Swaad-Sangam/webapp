@@ -1,11 +1,15 @@
 <div class="BottomBar">
     <div class="Route">
         <div class="icon">📚</div>
-        <div class="name">Route</div>
+        <div class="name">Explore</div>
     </div>
     <div class="Route">
         <div class="icon">📚</div>
-        <div class="name">Route</div>
+        <div class="name">Area Group</div>
+    </div>
+    <div class="Route">
+        <div class="icon">📚</div>
+        <div class="name">Local</div>
     </div>
 </div>
 
