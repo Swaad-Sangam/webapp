@@ -51,8 +51,8 @@
 
 		padding: 0px 20px;
 
-		background-color: #1d1b20;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+		background-color: white;
+		box-shadow: 8px 8px #D3D3D34a;
 		border-radius: 5px;
 
 		input,

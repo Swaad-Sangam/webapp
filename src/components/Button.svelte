@@ -20,7 +20,7 @@
 		border-radius: 6px;
 		font-weight: 500;
 		color: var(--color);
-		background-color: #1d1b20;
+		background-color: white;
 		cursor: pointer;
 	}
 
