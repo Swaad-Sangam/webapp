@@ -1,14 +1,12 @@
 <script>
-import Fa from 'svelte-fa/src/fa.svelte'
-
 import { faBookmark, faComment, faHeart, faShareNodes } from '@fortawesome/free-solid-svg-icons';
 </script>
 
 <div class="container">
     <img src="https://i.imgur.com/8Km9tLL.png" alt="user" /><br/>
     <h2>Hello User</h2>
-    <p><strong>Email</strong>: user@universe.com</p>
     <p><strong>User Name</strong> : </p>
+    <p><strong>Email</strong>: user@universe.com</p>
     <p><strong>Bio</strong>: </p> 
 
     <hr>
