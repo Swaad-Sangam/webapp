@@ -1,11 +1,7 @@
-import { SPOONACULAR_API_KEY } from "$env/static/private";
+import { PUBLIC_SPOONACULAR_API_KEY } from "$env/static/public";
+const API_KEY = PUBLIC_SPOONACULAR_API_KEY
 
-const dotenv = require('dotenv');
-
-dotenv.config()
-const API_KEY = SPOONACULAR_API_KEY
-
-async function  getRecipe(query: string) {
+export async function  getRecipe(query: string) {
     let url = "https://api.spoonacular.com/recipes/complexSearch?query=" + query + "&apiKey=" + API_KEY
     let response = await fetch(url)
     let data = await response.json()

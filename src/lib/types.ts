@@ -15,12 +15,12 @@ export interface recipe_t {
 	name: string;
 	category: string[];
 	tags: string[];
-	likes: number;
-	ratings: number;
-	comment: comment_t[];
+	likes?: number;
+	ratings?: number;
+	comment?: comment_t[];
 	ingredients: string[];
 	steps: string[];
-	nutrition: nutrition_t;
+	nutrition?: nutrition_t;
 }
 export interface newRecipe_t {
 	name: string;

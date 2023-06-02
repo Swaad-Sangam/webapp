@@ -1,20 +1,17 @@
 <script>
-	import Icon from 'svelte-awesome';
-
-	import user from 'svelte-awesome/icons/user';
+	import { faUser } from '@fortawesome/free-solid-svg-icons';
+	import Fa from 'svelte-fa/src/fa.svelte';
 </script>
 
 <div class="TopBar">
 	<div class="logo" />
-	    <div class="profile">
-            <div class="dp"><Fa icon={faUser} /></div>
-                <div class="details">
-                    <div class="name">User</div>
-                    <div class="bio">Bio</div>
-                </div>
-            
-        </div>
-    
+	<div class="profile">
+		<div class="dp"><Fa icon={faUser} /></div>
+		<div class="details">
+			<div class="name">User</div>
+			<div class="bio">Bio</div>
+		</div>
+	</div>
 </div>
 
 <style lang="scss">
@@ -71,9 +68,3 @@
 		}
 	}
 </style>
-
-<script>
-import Icon from 'svelte-awesome';
-
-import user from 'svelte-awesome/icons/user';
-</script>

@@ -1,26 +1,37 @@
 import { supabase } from '../supabase';
-import { isSaving } from './stores';
-import type { nutrition_t } from './types';
+import { isSaving, recipeStore } from './stores';
+import type { newRecipe_t, nutrition_t } from './types';
 import toast from 'svelte-french-toast';
 
 export const recipeHandler = {
-	addRecipe: (
-		recipe_name: string,
-		category: string,
-		tags: string,
-		ingredients: string[],
-		steps: string[],
-		nutrition: nutrition_t
-	) => {
+	addRecipe: (newRecipe: newRecipe_t) => {
 		isSaving.set(true);
 		supabase.from('Recipe').insert({
-			recipe_name: recipe_name,
-			category: category,
-			nutrition: nutrition,
-			steps: steps,
-			ingredients: ingredients,
-			tags: tags
-		});
+			recipe_name: newRecipe.name,
+			category: newRecipe.category,
+			steps: newRecipe.steps,
+			ingredients: newRecipe.ingredients,
+			tags: newRecipe.tags
+		}).then(()=> {
+			recipeHandler.getRecipes()
+		})
+	},
+	getRecipes: async () => {
+		supabase.from('Recipe').select('*').then((data)=> {
+			recipeStore.set([data.data?.map((d)=> {
+				return {
+					id: d.id,
+					name: d.recipe_name,
+					category: d.category,
+					steps: d.steps,
+					ingredients: d.ingredients,
+					tags: d.tags
+				}
+			})])
+		})
+	},
+	getRecipe: async (recipe_id: string) => {
+		supabase.from('Recipe').select('*').eq('id', recipe_id);
 	},
 	deleteRecipe: (recipe_id: string) => {
 		isSaving.set(true);

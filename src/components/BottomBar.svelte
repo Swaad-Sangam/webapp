@@ -11,7 +11,7 @@
             <div class="name">Search</div>
         </div>
     </a>
-    <a href="/dashboard/post">
+    <a href="/dashboard/newrecipe">
         <div class="Route">
             <div class="icon"><Fa icon={faPlusCircle} /></div>
             <div class="name">Post</div>
